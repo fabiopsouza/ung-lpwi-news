@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+   height: 100%;
+}
+
+iframe{
+	border: none;
+}
+
+iframe::-webkit-scrollbar {  
+    display: none;
+}
