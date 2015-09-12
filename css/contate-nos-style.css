@@ -1,0 +1,60 @@
+/*****************************/
+/* #Contate-nos              */
+/*****************************/
+
+body{
+	font-size: 1em;
+}
+
+.formulario fieldset{
+	border: 0px solid #ccc;
+	padding: 20px;
+	font-size: 1em;
+}
+
+.formulario fieldset label{
+	font-weight: bold;
+	display: block;
+	margin: 10px 0 5px 0;
+	position: relative;
+}
+
+.formulario fieldset input{
+	display:inline-block;
+	width: 50%;
+	position: relative;
+}
+
+.formulario fieldset select{
+	display: inline-block;
+	position: relative;
+	width: 25%;
+}
+
+.formulario fieldset textarea{
+	display: inline-block;
+	width: 50%;
+	height: 100px;
+	margin: 10px 0 10px 0;
+	font-size: 0.75em;
+}
+
+.formulario input,
+.formulario select {
+	padding: 6px;
+	border: solid 1px #E5E5E5;
+	width: 200px;
+	border-radius: 2px;
+}
+
+.form-contato input:hover, 
+.formulario textarea:hover, 
+.formulario input:focus, 
+.formulario fieldset textarea:focus {
+	border-color: #B9B9B9;
+}
+
+#btnEnviar:hover{
+	background-color: #dddddd;
+	border-color: #B9B9B9;
+}
