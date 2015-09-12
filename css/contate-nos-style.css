@@ -2,32 +2,31 @@
 /* #Contate-nos              */
 /*****************************/
 
-body{
+section{
 	font-size: 1em;
 }
 
+.contate-nos{
+	padding: 30px;
+}
+
 .formulario fieldset{
-	border: 0px solid #ccc;
-	padding: 20px;
-	font-size: 1em;
+	border: 0px solid #ffffff;
 }
 
 .formulario fieldset label{
 	font-weight: bold;
 	display: block;
 	margin: 10px 0 5px 0;
-	position: relative;
 }
 
 .formulario fieldset input{
 	display:inline-block;
 	width: 50%;
-	position: relative;
 }
 
 .formulario fieldset select{
 	display: inline-block;
-	position: relative;
 	width: 25%;
 }
 
@@ -48,7 +47,7 @@ body{
 }
 
 .form-contato input:hover, 
-.formulario textarea:hover, 
+.formulario textarea:hover,
 .formulario input:focus, 
 .formulario fieldset textarea:focus {
 	border-color: #B9B9B9;
