@@ -16,9 +16,6 @@
 }
 
 img{
-	float: left;
-	width: 60px;
-	height: 50px;
 	margin-top: 5px;
 	margin-left: 10%;
 }
@@ -38,8 +35,8 @@ nav ul {
 
 nav li {
 	float: left;
-	position: relative;
 	width: auto;
+	position: relative;
 }
 
 nav ul li:first-child{
@@ -109,7 +106,7 @@ input[type=text], input[type=password]{
 
 input[type=submit]{
 	height: 2.2em;
-	width: 5em;
+	width: 6em;
 	border: 1px solid #efefef;
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
@@ -117,6 +114,8 @@ input[type=submit]{
 }
 
 input[type=submit]:hover{
+	cursor: pointer;
+
 	background: rgba(226,226,226,1);
 	background: -moz-linear-gradient(-45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 27%, rgba(209,209,209,1) 76%, rgba(254,254,254,1) 100%);
 	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(27%, rgba(219,219,219,1)), color-stop(76%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));

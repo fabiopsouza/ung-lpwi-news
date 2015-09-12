@@ -28,6 +28,22 @@ a{
 	text-decoration: none;
 }
 
+.clear-left{
+	clear: left;
+}
+
+.clear-right{
+	clear: right;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
 /*****************************/
 /* Header                    */
 /*****************************/
