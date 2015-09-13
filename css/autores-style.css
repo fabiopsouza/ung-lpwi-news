@@ -3,8 +3,7 @@
 /************************************/
 h1{
 	font-size: 2em;
-	font-weight: 800;
-	margin: 10px 0px 0px 10px;
+	margin: 30px 0px 0px 30px;
 	color: rgba(114,178,238,1);
 }
 
@@ -31,8 +30,8 @@ article{
 }
 
 .box-autor-left, .box-autor-right{
-	width: 93.5%;
-	margin: 10px;
+	width: 88.5%;
+	margin: 10px 0 10px 30px;
 	background-color: #f9f9f9;
 }
 
