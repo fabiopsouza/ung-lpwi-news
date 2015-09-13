@@ -20,12 +20,32 @@ iframe::-webkit-scrollbar {
     display: none;
 }
 
+h1,h2,h3,h4,h5,h6{
+	color: rgba(114,178,238,1);
+}
+
 p{
 	font-weight: 200;
 }
 
 a{
 	text-decoration: none;
+}
+
+.clear-left{
+	clear: left;
+}
+
+.clear-right{
+	clear: right;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
 }
 
 /*****************************/
