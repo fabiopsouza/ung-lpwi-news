@@ -1,2 +1,88 @@
+/*Ajustar o tamanho nas laterais */
+.principal {
+margin: 10px 15px;
+}
+	/*Tamanho da fonte, cor, espacamento */
+	.principal a{
+	font-size: 30px;
+	text-decoration:none;
+	color: rgba(114,178,238,1);
+	letter-spacing: -0.03em;
+	line-height: 1.1em;
+	}
+	/*Linha de divisao de noticia*/
+ 	#linha-Principal{
+ 	margin: 10px 0px;
+ 	border-top: 1px dashed #ccc;
+	}
+	/*Sublinhado ao passar o mouse*/
+	.principal a:hover{
+	text-decoration:underline;
+	}
+	/*Ajuste de espacamento depois do titulo*/
+	.principal p{
+ 	margin: 10px 0px;
+ 	}
+/*Ajustar o tamanho nas laterais */
+.sub-Principal {
+	clear: left;
+	margin: 10px 15px;
+	width: 55%;
+	float: left;
+}
+	/*Tamanho da fonte, cor, espacamento */
+	.sub-Principal a{
+	font-size: 20px;	
+	text-decoration:none;
+	color: rgba(114,178,238,1);
+	letter-spacing: -0.03em;
+	line-height: 1.1em;
+	}
+	.sub-Principal p{
+ 	margin: 10px 0px;
+ 	}
+ 	/*Sublinhado ao passar o mouse*/
+	.sub-Principal a:hover{
+	text-decoration:underline;
+	} 
+/*Ajustar o tamanho nas laterais */
+.sub1-Principal, .sub2-Principal{
+	width: 38%;
+	margin-top: 10px;
+	float: right;
+}
+	/*Tamanho da fonte, cor, espacamento */
+	.sub1-Principal a{
+	font-size: 18px;
+	text-decoration:none;
+	color: rgba(114,178,238,1);
+	letter-spacing: -0.02em;
+	line-height: 1.1em;	
+	}
+	.sub1-Principal p{
+	font-size: 15px;
+ 	margin: 10px 17px 0px 0px;
+ 	}
+ 	/*Sublinhado ao passar o mouse*/
+	.sub1-Principal a:hover{
+	text-decoration:underline;
+	}
+	/*Tamanho da fonte, cor, espacamento */
+	.sub2-Principal a{
+	font-size: 18px;
+	text-decoration:none;
+	color: rgba(114,178,238,1);
+	letter-spacing: -0.02em;
+	line-height: 1.1em;
+	}
+	.sub2-Principal p{
+	font-size: 15px;
+ 	margin: 10px 17px 0px 0px;
+ 	}
+	/*Sublinhado ao passar o mouse*/
+	.sub2-Principal a:hover{
+	text-decoration:underline;
+	}
+
 
 
