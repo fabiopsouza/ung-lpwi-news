@@ -32,6 +32,25 @@ a{
 	text-decoration: none;
 }
 
+a:hover{
+	text-decoration: underline;
+}
+
+nav a:hover{
+	text-decoration: none;
+}
+
+img{
+	border: 1px solid #c1c1c1;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+img:hover{
+	border: 1px solid #a1a1a1;
+}
+
 .clear-left{
 	clear: left;
 }
@@ -46,6 +65,23 @@ a{
 
 .float-right{
 	float: right;
+}
+
+.row-for-float{
+	overflow: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+ 
+.clearfix:after {
+	content: " ";
+	display: block;
+	height: 0;
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
 }
 
 /*****************************/
@@ -115,14 +151,14 @@ section{
 /*****************************/
 aside{
 	width: 24.5%;
-	height: 800px;
+	height: 900px;
 	margin-top: 75px;		
 	margin-left: 15px;	
 }
 
 aside iframe{
 	width: 100%;
-	height: 800px;
+	height: 900px;
 
 	border: 1px solid #efefef;
 	-webkit-border-radius: 4px;
@@ -165,7 +201,9 @@ footer iframe{
 /*****************************/
 /* Input                     */
 /*****************************/
-input[type=text], input[type=password], textarea {  
+input[type=text], 
+input[type=password], 
+textarea {  
 	outline: none;
   	border: 1px solid #efefef;
   	-webkit-transition: all 0.30s ease-in-out;
@@ -173,8 +211,10 @@ input[type=text], input[type=password], textarea {
   	-ms-transition: all 0.30s ease-in-out;
   	-o-transition: all 0.30s ease-in-out;
 }
- 
-input[type=text]:focus, input[type=password]:focus, textarea:focus {
+
+input:focus, 
+textarea:focus, 
+select:focus {
   	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   	border: 1px solid rgba(81, 203, 238, 1);
 }
