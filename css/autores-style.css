@@ -15,6 +15,10 @@ article{
 /* box-autor-left & box-autor-right */
 /************************************/
 .box-autor-left, .box-autor-right{
+	width: 88.5%;
+	margin: 10px 0 10px 30px;
+	background-color: #f9f9f9;
+
 	border: 1px solid #e1e1e1;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -27,12 +31,6 @@ article{
 
 .box-autor-right{
 	padding: 1em 0.5em 1em 1.5em;
-}
-
-.box-autor-left, .box-autor-right{
-	width: 88.5%;
-	margin: 10px 0 10px 30px;
-	background-color: #f9f9f9;
 }
 
 .box-autor-left h2, .box-autor-right h2{
@@ -61,4 +59,12 @@ article{
 	border-radius: 80px;
 	-webkit-border-radius: 80px;
 	-moz-border-radius: 80px;
+}
+
+.box-autor-left .img-rounded{
+	margin-right: 10px;
+}
+
+.box-autor-right .img-rounded{
+	margin-left: 10px;
 }
