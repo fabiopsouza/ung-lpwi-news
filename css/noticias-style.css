@@ -1,0 +1,38 @@
+/*Noticias.html*/
+.principal {
+	margin: 20px 20px;
+}
+/*Tamanho da fonte, cor, espacamento */
+	.principal a{
+		font-size: 50px;
+		text-decoration:none;
+		color: rgba(114,178,238,1);
+		letter-spacing: -0.03em;
+		line-height: 1.1em;
+		text-align: justify;
+	}
+	/*Sublinhado ao passar o mouse*/
+	.principal a:hover{
+		text-decoration:underline;
+	}
+	img{
+		line-height: 1.5em;
+				
+	}
+	h1{/*fonte do resumo da noticia */
+		
+		margin: 10px;
+		font: 15px;
+		font-size: 15px;
+		color: #cccccc;
+		line-height: 1.5em;
+		text-align: justify;
+	}
+	p{
+		text-indent: 2em;
+		font-size: 20px;
+		color:#000000;
+		text-align: justify;
+		letter-spacing: -0.05em;
+
+	}
