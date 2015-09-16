@@ -1,7 +1,7 @@
 /*****************************/
 /* #footer                    */
 /*****************************/
-#footer{
+div#footer{
 	width: 100%;
 	height: 100%;
 
@@ -14,3 +14,38 @@
 	background: linear-gradient(to bottom, rgba(114,178,238,1) 0%, rgba(68,145,233,0.98) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72b2ee', endColorstr='#4491e9', GradientType=0 );	
 }
+
+hr{
+	width: 50%;
+}
+.esq{
+	width:100%;
+	height:200px;
+	float: left;
+	text-align:center;
+}
+.dir{
+	width:75%;
+	height:200px;
+	float: right;
+	text-align:center;
+}
+.cen{
+	width:66.67%;
+	height:200px;
+	float: left;
+	text-align:center;
+}
+p{
+	font-size: 14px;
+	
+	
+}
+
+	
+
+
+
+
+
+
