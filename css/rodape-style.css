@@ -14,34 +14,63 @@ div#footer{
 	background: linear-gradient(to bottom, rgba(114,178,238,1) 0%, rgba(68,145,233,0.98) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72b2ee', endColorstr='#4491e9', GradientType=0 );	
 }
-
-hr{
-	width: 50%;
-}
-.esq{
-	width:100%;
+div#time{
+	width:500px;
 	height:200px;
-	float: left;
+	position: absolute;
+	top:50;
+	left:100;
+	margin-top: 50;
 	text-align:center;
 }
-.dir{
-	width:75%;
-	height:200px;
-	float: right;
-	text-align:center;
-}
-.cen{
-	width:66.67%;
-	height:200px;
-	float: left;
-	text-align:center;
+div#time{
+	width:500px; /* Tamanho da Largura da Div */
+	height:200px; /* Tamanho da Altura da Div */
+    position:absolute; 
+    top:50%; 
+    margin-top:-100px; /* ou seja ele pega 50% da altura tela e sobe metade do valor da altura no caso 100 */
+    left:50%;
+    margin-left:-250px; /* ou seja ele pega 50% da largura tela e diminui  metade do valor da largura no caso 250 */
 }
 p{
-	font-size: 14px;
-	
-	
+	font-weight: bolder;
+	font-size:18px;
 }
-
+ul li{
+	font-weight: normal;
+	list-style-type:none;
+	font-size: 13px;
+}
+.marcaung img{
+ float: right;
+ width: 15em;
+ height:9.4em;
+ margin: 0px 0px 30px 0px;
+}
+.facebook img{
+ float: right;
+ width: 3em;
+ height:3em;
+ margin: 20px 20px 0px 0px;
+}
+.twiter img{
+ float: right;
+ width: 3em;
+ height:3em;
+ margin: 80px -50px 0px 0px;
+}
+.selo_html img{
+ float: left;
+ width: 7em;
+ height:3.5em;
+ margin: 12px 0px 0px 100px;
+}
+.selo_css img{
+ float: left;
+ width: 7em;
+ height:3.5em;
+ margin: 83px 0px 0px -114px;
+}
 	
 
 
