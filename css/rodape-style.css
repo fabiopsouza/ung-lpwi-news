@@ -12,67 +12,59 @@ div#footer{
 	background: -o-linear-gradient(top, rgba(114,178,238,1) 0%, rgba(68,145,233,0.98) 100%);
 	background: -ms-linear-gradient(top, rgba(114,178,238,1) 0%, rgba(68,145,233,0.98) 100%);
 	background: linear-gradient(to bottom, rgba(114,178,238,1) 0%, rgba(68,145,233,0.98) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72b2ee', endColorstr='#4491e9', GradientType=0 );	
-}
-div#time{
-	width:500px;
-	height:200px;
-	position: absolute;
-	top:50;
-	left:100;
-	margin-top: 50;
-	text-align:center;
-}
-div#time{
-	width:500px; /* Tamanho da Largura da Div */
-	height:200px; /* Tamanho da Altura da Div */
-    position:absolute; 
-    top:50%; 
-    margin-top:-100px; /* ou seja ele pega 50% da altura tela e sobe metade do valor da altura no caso 100 */
-    left:50%;
-    margin-left:-250px; /* ou seja ele pega 50% da largura tela e diminui  metade do valor da largura no caso 250 */
-}
-p{
-	font-weight: bolder;
-	font-size:18px;
-}
-ul li{
-	font-weight: normal;
-	list-style-type:none;
-	font-size: 15px;
-}
-.marcaung img{
- float: right;
- width: 15em;
- height:9.4em;
- margin: 0px 0px 30px 0px;
-}
-.facebook img{
- float: right;
- width: 3em;
- height:3em;
- margin: 20px 20px 0px 0px;
-}
-.twiter img{
- float: right;
- width: 3em;
- height:3em;
- margin: 80px -50px 0px 0px;
-}
-.selo_html img{
- float: left;
- width: 7em;
- height:3.5em;
- margin: 12px 0px 0px 100px;
-}
-.selo_css img{
- float: left;
- width: 7em;
- height:3.5em;
- margin: 83px 0px 0px -114px;
 }
 
+#container{
+	width: 80%;
+	height: 100%;
+	margin-left: 10%;
+}
 
+#time{
+	width: 10%;
+	float: left;
+	list-style: none;
+	margin-top: 15px;
+	display: inline-block;
+}
 
+#time h1{
+	color: #666;
+	margin-bottom: 10px;
+	display: inline-block;
+	font-size: 18px;	
+}
 
+ul{
+	list-style: none;
+}
 
+li{
+	color: #666;
+	font-size: 12px;	
+}
+
+#redes-sociais{
+	float: right;
+	width: 15%;
+	height: 10%;
+
+	margin-top: 6%;
+}
+
+img:hover{
+	cursor: pointer;
+}
+
+#selos{
+	float: left;
+	margin-left: 30%;
+	margin-top: 6%;
+	position: inline-block;
+}
+
+#selos a img{
+	border:0;
+	width:88px;
+	height:31px
+}

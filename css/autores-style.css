@@ -7,7 +7,7 @@ h1{
 	color: rgba(114,178,238,1);
 }
 
-article{
+.article{
 	text-align: justify;
 }
 
@@ -37,18 +37,18 @@ article{
 	color: rgba(114,178,238,1);
 }
 
-.box-autor-left article, .box-autor-right article{
+.box-autor-left .article, .box-autor-right .article{
 	width: 80%;
 	color: #666;
 	margin-top: 0.2em;
 	line-height: 1.2em;
 }
 
-.box-autor-left h2, .box-autor-left article{
+.box-autor-left h2, .box-autor-left .article{
 	margin-left: 21%;
 }
 
-.box-autor-right h2, .box-autor-right article{
+.box-autor-right h2, .box-autor-right .article{
 	margin-right: 21%;
 }
 
