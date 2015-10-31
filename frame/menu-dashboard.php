@@ -8,6 +8,14 @@
 </head>
 <body>
 	<div id="container-menu">
+		<nav>
+		  	<ul>
+				<li><a target="_parent" href="../dashboard/identidadevisual.php">Identidade Visual</a></li>
+			  	<li><a target="_parent" href="../dashboard/navegabilidade.php" >Navegabilidade</a></li>
+			  	<li><a target="_parent" href="../dashboard/contact.asp">Contact</a></li>
+			  	<li><a target="_parent" href="../dashboard/about.asp">About</a></li>
+			</ul>
+		</nav>
 	</div>
 </body>
 </html>

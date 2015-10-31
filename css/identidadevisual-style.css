@@ -1,0 +1,85 @@
+/*****************************/
+/* #container                */
+/*****************************/
+#container{
+	width: 98%;
+	height: 500px;
+
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+#container .header{
+	padding: 10px 10px 10px 20px;
+	border-bottom: 1px solid #a1a1a1;
+}
+
+#container .body{
+	padding: 20px 20px 20px 20px;
+}
+
+/*****************************/
+/* .display-color            */
+/*****************************/
+form .container:not(#first-container){
+	margin-left: 10px; 
+}
+
+form .container{
+	width: 18.9%;
+	float: left;
+	border: 1px solid #a1a1a1;
+}
+
+form .container .display-color{	
+	height: 300px;
+	border-bottom: 1px solid #a1a1a1;
+}
+
+form .container .display-color:hover{
+	cursor: pointer;
+}
+
+form input[type=submit]{
+	margin-top: 30px;
+	float: right;
+}
+
+form input[type=submit]{
+	height: 3.5em;
+	width: 15em;
+	border: 1px solid #efefef;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+form input[type=submit]:hover{
+	cursor: pointer;
+	border: 1px solid #a1a1a1;
+}
+
+#display-default-color{
+	background-color: rgba(114,178,238,1);
+}
+
+#display-red-color{
+	background-color: #ff0000;
+}
+
+#display-green-color{
+	background-color: #00ff00;
+}
+
+#display-yellow-color{
+	background-color: #ffff00;
+}
+
+#display-other-color{
+	margin-left: 10px;
+}
+
+#input-other-color{
+	width: 80%;
+	margin-top: 75%;
+}

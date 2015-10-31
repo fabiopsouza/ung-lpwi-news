@@ -17,7 +17,7 @@
 		  </ul>
 		</nav>
 		<div id="container-form">
-			<form method="POST" action="dashboard/dashboard.php">
+			<form method="POST" action="../dashboard/dashboard.php" target="_parent">
 				<input type="text" name="login" placeholder="E-mail" required/>
 				<input type="password" name="password" placeholder="Senha" required/>
 				<input type="submit" value="Entrar">
