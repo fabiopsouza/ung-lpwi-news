@@ -1,0 +1,97 @@
+/*****************************/
+/* Navbar                    */
+/*****************************/
+#navbar{
+	height: 60px;
+	overflow: hidden;
+
+	background: #72b2ee;
+}
+
+img{
+	margin-top: 5px;
+	margin-left: 10%;
+}
+
+/*****************************/
+/* Menu                      */
+/*****************************/
+nav{
+	margin-left: 10%;
+}
+
+nav ul {
+	background: gray;
+	list-style: none;
+	width: 100%;
+}
+
+nav li {
+	float: left;
+	width: auto;
+	position: relative;
+}
+
+nav ul li:first-child{
+	background: #ffffff;
+}
+
+nav ul li:first-child a{
+	color: #30A6E6;
+}
+
+nav a {
+	color: #ffffff;
+	display: block;
+	font: bold 1.1em sans-serif;
+	padding: 19px 25px 19px;
+	text-align: center;
+
+	-webkit-transition: all 0.15s ease-in-out;
+  	-moz-transition: all 0.15s ease-in-out;
+  	-ms-transition: all 0.15s ease-in-out;
+  	-o-transition: all 0.15s ease-in-out;
+}
+
+nav li:hover a:not(#item-home){
+	color: #30A6E6;
+
+	background: #ffffff;
+}
+
+/*****************************/
+/* Form                      */
+/*****************************/
+#container-form{
+	display: inline-block;
+	width: auto;
+	float: right;
+
+	margin-top: 15px;
+	margin-right: 10%;
+}
+
+input[type=text], input[type=password]{
+	font-size: 0.9em;
+	width: 11em;
+	height: 1.9em;
+
+	border: 1px solid #efefef;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+input[type=submit]{
+	height: 2.2em;
+	width: 6em;
+	border: 1px solid #efefef;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+input[type=submit]:hover{
+	cursor: pointer;
+	border: 1px solid #a1a1a1;
+}	

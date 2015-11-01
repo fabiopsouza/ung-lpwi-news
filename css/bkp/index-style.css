@@ -1,0 +1,112 @@
+section h1{
+	display: none;
+}
+
+/*****************************/
+/* p                         */
+/*****************************/
+p{
+	text-align: justify;
+}
+
+/*****************************/
+/* a                         */
+/*****************************/
+.nivel-um a{
+	font-size: 1.4em;
+	color: #72b2ee;
+}
+
+.nivel-dois a{
+	font-size: 1.3em;
+	color: #72b2ee;
+}
+
+.nivel-tres a{
+	font-size: 1.2em;
+	color: #72b2ee;
+}
+
+.nivel-quatro a{
+	font-size: 1.1em;
+	color: #72b2ee;
+}
+
+/*****************************/
+/* p                         */
+/*****************************/
+p{
+	font-size: 1em;
+	color: #666;
+}
+/*****************************/
+/* row                       */
+/*****************************/
+.row-for-float{
+	width: 92.5%;
+	margin: 10px 0 0 30px;
+}
+
+/*****************************/
+/* .nivel-um                 */
+/*****************************/
+.nivel-um{
+	width: 92.5%;
+	margin: 30px 0 0 30px;
+}
+
+.nivel-um img{
+	width: 100%;
+}
+
+/*****************************/
+/* .nivel-dois               */
+/*****************************/
+.nivel-dois{
+	float: left;
+	width: 37.5%;
+}
+
+.nivel-dois img{
+	width: 100%;
+}
+
+/*****************************/
+/* .nivel-tres               */
+/*****************************/
+.nivel-tres{
+	width: 60%;
+	margin: 0 0 10px 39.1%;
+	overflow: hidden;
+}
+
+.nivel-tres img{
+	float: left;
+}
+
+.nivel-tres .nivel-tres-texto{
+	margin-left: 52.5%;
+}
+
+/*****************************/
+/* .nivel-quatro             */
+/*****************************/
+.nivel-quatro{	
+	width: 23.8%;
+	margin-bottom: 10px;
+}
+
+.nivel-quatro img{
+	width: 100%;
+}
+
+.nivel-quatro{
+	float: left;
+	overflow: hidden;
+}
+
+.row-for-float .dois,
+.row-for-float .tres,
+.row-for-float .quatro{
+	margin-left: 11px;
+}

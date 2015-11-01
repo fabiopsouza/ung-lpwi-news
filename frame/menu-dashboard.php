@@ -10,10 +10,13 @@
 	<div id="container-menu">
 		<nav>
 		  	<ul>
+		  		<li><a target="_parent" href="../dashboard/dashboard.php">Dashboard</a></li>
 				<li><a target="_parent" href="../dashboard/identidadevisual.php">Identidade Visual</a></li>
 			  	<li><a target="_parent" href="../dashboard/navegabilidade.php" >Navegabilidade</a></li>
-			  	<li><a target="_parent" href="../dashboard/contact.asp">Contact</a></li>
-			  	<li><a target="_parent" href="../dashboard/about.asp">About</a></li>
+			  	<li><a target="_parent" href="../dashboard/#">Publicar Noticia</a></li>
+			  	<li><a target="_parent" href="../dashboard/#">Editar Sobre</a></li>
+			  	<li><a target="_parent" href="../dashboard/#">Editar Autores</a></li>
+			  	<li><a target="_parent" href="../dashboard/#">Sair</a></li>
 			</ul>
 		</nav>
 	</div>

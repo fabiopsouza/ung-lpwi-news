@@ -18,7 +18,7 @@
 			<iframe src="../frame/menu-dashboard.php"></iframe>
 		</div> <!--Fim menu-dashboard -->
 		<div id="container-dashboard" class="float-right">
-			<h1>Conteúdo</h1>
+			<h1>Em construção</h1>
 		</div> <!--Fim container-main-->
 	</div>  <!--Fim .row-for-float-->
 	<footer id="footer-dashboard">
