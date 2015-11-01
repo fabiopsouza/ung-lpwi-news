@@ -1,5 +1,6 @@
 <?php 
 	include '../builders/styleBuilder.php';
+	include '../builders/nameBuilder.php';
 
 	if(isset($_POST["select-color"]))
 	{
@@ -15,6 +16,12 @@
 
 		estilizeAllPages($color);
 	}
+
+	if(isset($_POST["nome-site"]))
+	{
+		$name = $_POST["nome-site"];
+		setSiteName($name);
+	}	
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +52,13 @@
 					<h2>Manutenção - Nome</h2>
 				</div>
 				<div class="body">
-					TESTE
+					<div class="formulario">
+						<form method="POST" action="" target="_parent">
+							<label>Insira o nome do site:</label>
+							<input type="text" name="nome-site"/>
+							<input type="submit" value="Salvar" />
+						</form>
+					</div>
 				</div>
 			</div>
 
