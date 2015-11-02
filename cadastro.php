@@ -22,7 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="shortcut icon" type="image/png" href="img/icontitle.png">
 	<link rel="stylesheet" type="text/css" href="css/contate-nos-style.css">
-	<title>Portal de Notícias</title>
+	<title>CCNews | Cadastro</title>
 </head>
 <body>
 	<header>

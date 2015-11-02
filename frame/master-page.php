@@ -10,10 +10,11 @@
 						<div id="navbar">
 							<nav>
 							  <ul>
-								<li><a id="item-home" target="_parent" href="../index.php">CCNews</a></li>
+							  	<li><a id="item-home" target="_parent" href="../index.php">CCNews</a></li>
 								<li><a target="_parent" href="../sobre.php">Sobre</a></li>
 								<li><a target="_parent" href="../autores.php">Autores</a></li>
 								<li><a target="_parent" href="../contate-nos.php">Contato</a></li>
+								<li><a target="_parent" href="../cadastro.php">Cadastro</a></li>
 							  </ul>
 							</nav>
 							<div id="container-form">

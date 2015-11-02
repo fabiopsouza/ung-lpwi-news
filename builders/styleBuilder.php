@@ -185,16 +185,53 @@
 					/* .container-dashboard      */
 					/*****************************/
 					.container-dashboard{
+						width: 98%;
+						margin-top: 10px;
+						margin-left: 10px;
+
 						background-color: #ffffff;
 
 						border: 1px solid #c1c1c1;
 						border-radius: 4px;
 						-moz-border-radius: 4px;
 						-webkit-border-radius: 4px;
-						
+
 						box-shadow: 0px 0px 50px -15px #b1b1b1;
 					   	-webkit-box-shadow: 0px 0px 50px -15px #b1b1b1;
 					   	-moz-box-shadow: 0px 0px 50px -15px #b1b1b1;
+					}
+
+					.container-dashboard .header{
+						padding: 10px 10px 10px 20px;
+						border-bottom: 1px groove #". $color .";
+					}
+
+					.container-dashboard .body{
+						padding: 20px 20px 20px 20px;
+					}
+
+					/*****************************/
+					/* form input submit         */
+					/*****************************/
+					form input[type=submit]{
+						margin-top: 30px;
+						float: right;
+
+						height: 3.5em;
+						width: 14.5em;
+
+						border: 1px solid #efefef;
+						border-radius: 2px;
+						-webkit-border-radius: 2px;
+						-moz-border-radius: 2px;
+
+						color: #ffffff;
+						background-color: #". $color .";
+					}
+
+					form input[type=submit]:hover{
+						cursor: pointer;
+						border: 1px solid #a1a1a1;
 					}";
 
 		subscribeFile($file, $content);
@@ -442,25 +479,7 @@
 	function estilizeIdentidadevisual($color){
 		$file = "../css/identidadevisual-style.css";
 
-		$content = "/*****************************/
-					/* .container-dashboard      */
-					/*****************************/
-					.container-dashboard{
-						width: 98%;
-						margin-top: 10px;
-						margin-left: 10px;
-					}
-
-					.container-dashboard .header{
-						padding: 10px 10px 10px 20px;
-						border-bottom: 1px groove #72b2ee;
-					}
-
-					.container-dashboard .body{
-						padding: 20px 20px 20px 20px;
-					}
-
-					/******************************/
+		$content = "/******************************/
 					/* #container-nome            */
 					/******************************/
 					#container-nome{
@@ -496,7 +515,7 @@
 					}
 
 					/*****************************/
-					/* .display-color            */
+					/* form display-color        */
 					/*****************************/
 					form .container:not(#first-container){
 						margin-left: 10px; 
@@ -517,29 +536,13 @@
 						cursor: pointer;
 					}
 
-					form input[type=submit]{
-						margin-top: 30px;
-						float: right;
 
-						height: 3.5em;
-						width: 14.5em;
 
-						border: 1px solid #efefef;
-						border-radius: 2px;
-						-webkit-border-radius: 2px;
-						-moz-border-radius: 2px;
-
-						color: #ffffff;
-						background-color: #". $color .";
-					}
-
-					form input[type=submit]:hover{
-						cursor: pointer;
-						border: 1px solid #a1a1a1;
-					}
-
+					/*****************************/
+					/* display-color             */
+					/*****************************/
 					#display-default-color{
-						background-color: #72b2ee;
+						background-color: #72b2ee; /*Não alterar no builder*/
 					}
 
 					#display-red-color{
@@ -832,6 +835,34 @@
 					}";
 
 		subscribeFile($file, $content);
+	}
+
+	function estilizeNavegabilidade($color){
+		$file = "../css/navegabilidade-style.css";
+
+		$content = "/*****************************/
+					/*  form                     */
+					/*****************************/
+					form label{
+						font-weight: bold;
+					}
+
+					form .float-left div,
+					form .float-right div div{
+						margin-bottom: 20px;
+					}
+
+					form .float-right div div{
+						display: inline-block;
+						margin-left: 50px;
+					}
+
+					/*****************************/
+					/*  #opcoes-position         */
+					/*****************************/
+					#opcoes-position{
+						margin-right: 60%;
+					}";
 	}
 
 	function estilizeNoticia($color){

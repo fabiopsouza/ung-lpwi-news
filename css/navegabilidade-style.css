@@ -1,0 +1,23 @@
+/*****************************/
+/*  form                     */
+/*****************************/
+form label{
+	font-weight: bold;
+}
+
+form .float-left div,
+form .float-right div div{
+	margin-bottom: 20px;
+}
+
+form .float-right div div{
+	display: inline-block;
+	margin-left: 50px;
+}
+
+/*****************************/
+/*  #opcoes-position         */
+/*****************************/
+#opcoes-position{
+	margin-right: 60%;
+}

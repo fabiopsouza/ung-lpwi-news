@@ -1,22 +1,4 @@
-/*****************************/
-					/* .container-dashboard      */
-					/*****************************/
-					.container-dashboard{
-						width: 98%;
-						margin-top: 10px;
-						margin-left: 10px;
-					}
-
-					.container-dashboard .header{
-						padding: 10px 10px 10px 20px;
-						border-bottom: 1px groove #72b2ee;
-					}
-
-					.container-dashboard .body{
-						padding: 20px 20px 20px 20px;
-					}
-
-					/******************************/
+/******************************/
 					/* #container-nome            */
 					/******************************/
 					#container-nome{
@@ -52,7 +34,7 @@
 					}
 
 					/*****************************/
-					/* .display-color            */
+					/* form display-color        */
 					/*****************************/
 					form .container:not(#first-container){
 						margin-left: 10px; 
@@ -73,29 +55,13 @@
 						cursor: pointer;
 					}
 
-					form input[type=submit]{
-						margin-top: 30px;
-						float: right;
 
-						height: 3.5em;
-						width: 14.5em;
 
-						border: 1px solid #efefef;
-						border-radius: 2px;
-						-webkit-border-radius: 2px;
-						-moz-border-radius: 2px;
-
-						color: #ffffff;
-						background-color: #72b2ee;
-					}
-
-					form input[type=submit]:hover{
-						cursor: pointer;
-						border: 1px solid #a1a1a1;
-					}
-
+					/*****************************/
+					/* display-color             */
+					/*****************************/
 					#display-default-color{
-						background-color: #72b2ee;
+						background-color: #72b2ee; /*Não alterar no builder*/
 					}
 
 					#display-red-color{
