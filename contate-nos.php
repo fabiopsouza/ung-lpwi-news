@@ -1,3 +1,30 @@
+﻿<?php
+	if(isset($_POST['nome']) && 
+		isset($_POST['email']) &&
+		isset($_POST['telefone']) && 
+		isset($_POST['estado']) && 
+		isset($_POST['cidade']) && 
+		isset($_POST['cidade']) &&
+		isset($_POST['mensagem'])){
+
+		$para = "cicungnews@gmail.com";
+		$nome = $_POST['nome'];
+		$email = $_POST['email'];
+		$telefone = $_POST['telefone'];
+		$estado = $_POST['estado'];
+		$cidade = $_POST['cidade'];
+		$mensagem = $_POST['mensagem'];
+		$assunto = "CCNews";
+
+		$corpo = "Nome: $nome <br> E-mail: $email <br>";
+		$corpo .= "Telefone: $telefone <br> Estado: $estado <br>";
+		$corpo .= "Cidade: $cidade <br> Mensagem: $mensagem <br>";
+
+		$headers ="Content-Type: text/html; charset=UTF-8\n";
+		  
+		mail($para, $assunto,$corpo, $headers);
+	}
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
