@@ -52,15 +52,11 @@
 						margin-right: 21%;
 					}
 
-					/************************************/
-					/* img-rounded   					*/
-					/************************************/
-					.img-rounded {
-						border-radius: 80px;
-						-webkit-border-radius: 80px;
-						-moz-border-radius: 80px;
-					}
 
+
+					/************************************/
+					/* box-autor     					*/
+					/************************************/
 					.box-autor-left .img-rounded{
 						margin-right: 10px;
 					}

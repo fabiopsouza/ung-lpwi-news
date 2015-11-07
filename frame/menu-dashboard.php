@@ -8,9 +8,19 @@
 </head>
 <body>
 	<div id="container-menu">
+		<div id="panel-identificacao">
+			<div class="row-for-float">
+				<img src="http://placehold.it/90x90" class="img-rounded float-left">
+				<div class="welcome">
+					<p>Welcome,</p>
+					<p>User Name</p>
+				</div>
+			</div>
+		</div>
 		<nav>
 		  	<ul>
 		  		<li><a target="_parent" href="../dashboard/dashboard.php">Dashboard</a></li>
+		  		<li><a target="_parent" href="../dashboard/#">Meu Cadastro</a></li>
 				<li><a target="_parent" href="../dashboard/identidadevisual.php">Identidade Visual</a></li>
 			  	<li><a target="_parent" href="../dashboard/navegabilidade.php" >Navegabilidade</a></li>
 			  	<li><a target="_parent" href="../dashboard/#">Publicar Noticia</a></li>

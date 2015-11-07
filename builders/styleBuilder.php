@@ -84,15 +84,11 @@
 						margin-right: 21%;
 					}
 
-					/************************************/
-					/* img-rounded   					*/
-					/************************************/
-					.img-rounded {
-						border-radius: 80px;
-						-webkit-border-radius: 80px;
-						-moz-border-radius: 80px;
-					}
 
+
+					/************************************/
+					/* box-autor     					*/
+					/************************************/
 					.box-autor-left .img-rounded{
 						margin-right: 10px;
 					}
@@ -122,57 +118,6 @@
 
 					p{
 						margin: 0px 0px 30px 30px;	
-					}
-
-					/*****************************/
-					/* .formulario               */
-					/*****************************/
-					.formulario{
-						width: 92%;
-						margin-left: 30px;
-						display: inline-block;
-					}
-
-					.formulario fieldset{
-						border: 0px solid #ffffff;
-					}
-
-					.formulario fieldset label{
-						font-weight: bold;
-						display: block;
-						margin: 10px 0px 2px 0px;
-					}
-
-					.formulario fieldset input,
-					.formulario fieldset select,
-					.formulario fieldset textarea{
-						width: 100%;
-						padding: 6px 0px 6px 0px;
-						
-						border-radius: 4px;
-						-moz-border-radius: 4px;
-						-webkit-border-radius: 4px;
-						border: solid 1px #E5E5E5;
-					}
-
-					.formulario fieldset textarea{	
-						height: 100px;
-					}
-
-					/*****************************/
-					/* #btnEnviar                */
-					/*****************************/
-					#btnEnviar{
-						width: 100%;
-						height: 2.2em;
-						margin-top: 2px;
-						color: #ffffff;
-						background-color: #". $color .";
-					}
-
-					#btnEnviar:hover{
-						cursor: pointer;
-						border: 1px solid #a1a1a1;
 					}";
 
 		subscribeFile($file, $content);
@@ -327,6 +272,15 @@
 						visibility: hidden;
 					}
 
+					/************************************/
+					/* img-rounded   					*/
+					/************************************/
+					.img-rounded {
+						border-radius: 80px;
+						-webkit-border-radius: 80px;
+						-moz-border-radius: 80px;
+					}
+
 					/*****************************/
 					/* Header                    */
 					/*****************************/
@@ -442,17 +396,60 @@
 					  	-o-transition: all 0.30s ease-in-out;
 					}
 
-					input:focus, 
-					textarea:focus, 
-					select:focus {
-					  	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
-					  	border: 1px solid rgba(81, 203, 238, 1);
+					/*****************************/
+					/* .formulario               */
+					/*****************************/
+					.formulario{
+						width: 92%;
+						margin-left: 30px;
+						display: inline-block;
+					}
+
+					.formulario fieldset{
+						border: 0px solid #ffffff;
+					}
+
+					.formulario fieldset label{
+						font-weight: bold;
+						display: block;
+						margin: 10px 0px 2px 0px;
+					}
+
+					.formulario fieldset input,
+					.formulario fieldset select,
+					.formulario fieldset textarea{
+						width: 100%;
+						padding: 6px 0px 6px 0px;
+						
+						border-radius: 4px;
+						-moz-border-radius: 4px;
+						-webkit-border-radius: 4px;
+						border: solid 1px #E5E5E5;
+					}
+
+					.formulario fieldset textarea{	
+						height: 100px;
+					}
+
+					/*****************************/
+					/* .btn-form                 */
+					/*****************************/
+					.btn-form{
+						width: 100%;
+						height: 2.2em;
+						margin-top: 5px;
+						color: #ffffff;
+						background-color: #". $color .";
+					}
+
+					.btn-form:hover{
+						cursor: pointer;
+						border: 1px solid #a1a1a1;
 					}
 
 					/*****************************/
 					/* Dashboard                 */
 					/*****************************/
-
 					#menu-dashboard{
 						width: 18%;
 						height: 900px;
@@ -802,7 +799,21 @@
 						width: 100%;
 						height: 100%;
 						position: fixed;
-						background-color: #d7d7d7;
+						background-color: #". $color .";
+					}
+
+					/*****************************/
+					/* panel-identificacao       */
+					/*****************************/
+					#panel-identificacao{
+						padding: 20px 0px 20px 5px;
+						border-bottom: 1px solid #ffffff;
+					}
+
+					.welcome{
+						color: #ffffff;
+						display: inline-block;
+						margin: 27px 0px 0px 10px;
 					}
 
 					/*****************************/
@@ -831,7 +842,7 @@
 					}
 
 					nav ul li:hover a{
-						color: #000000;
+						color: #". $color .";
 					}";
 
 		subscribeFile($file, $content);

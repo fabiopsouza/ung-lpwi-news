@@ -5,7 +5,21 @@
 						width: 100%;
 						height: 100%;
 						position: fixed;
-						background-color: #d7d7d7;
+						background-color: #72b2ee;
+					}
+
+					/*****************************/
+					/* panel-identificacao       */
+					/*****************************/
+					#panel-identificacao{
+						padding: 20px 0px 20px 5px;
+						border-bottom: 1px solid #ffffff;
+					}
+
+					.welcome{
+						color: #ffffff;
+						display: inline-block;
+						margin: 27px 0px 0px 10px;
 					}
 
 					/*****************************/
@@ -34,5 +48,5 @@
 					}
 
 					nav ul li:hover a{
-						color: #000000;
+						color: #72b2ee;
 					}

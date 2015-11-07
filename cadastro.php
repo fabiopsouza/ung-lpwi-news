@@ -19,8 +19,8 @@
 <html>
 <head lang="pt-BR">
 	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="shortcut icon" type="image/png" href="img/icontitle.png">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
 	<link rel="stylesheet" type="text/css" href="css/contate-nos-style.css">
 	<title>CCNews | Cadastro</title>
 </head>
@@ -33,11 +33,11 @@
 		<section>
 			<h1>Cadastre seu usuário</h1>
 			<div class="formulario">
-				<form method="post" action="">
+				<form class="formulario" method="post" action="">
 				<fieldset>
 					<label>Email:</label><input type="email" name="email" value="" placeholder="email@exemplo.com" required />
 					<label>Senha:</label><input type="password" name="senha" placeholder="Digite a senha" required />
-					<input type="submit" name="cadastro" id="cadastro" value="Cadastrar" />
+					<input class="btn-form" type="submit" name="cadastro" id="cadastro" value="Cadastrar" />
 				</fieldset>
 				</form>
 			</div>
