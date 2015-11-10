@@ -10,4 +10,14 @@
 		fwrite($file, $content);
 		fclose($file);
 	}
+
+	function getSecurityContent(){
+		$file = "../security/security.txt";
+		$content = file_get_contents($file);
+		
+		//Remove last pipe (|)
+		$content = rtrim($content, "|");
+
+		return $content;
+	}
 ?>

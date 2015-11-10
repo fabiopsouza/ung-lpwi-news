@@ -1,19 +1,15 @@
 <?php
 	if(isset($_POST['cadastro'])){
+		include 'common/common.php';
+
 		$email = $_POST['email'];
 		$senha = $_POST['senha'];
-		setcookie('cookieemail:',$email,time()+604800);
-		setcookie('cookiesenha:',$senha,time()+604800);
-		header('location: index.php');
 		
-		//$texto = $_POST['cadastro'];
-		//$arquivo = $_FILES['email']['name'];
-		$arq = fopen("security/security.txt","a");
-		$escreve = fwrite($arq, "$email;$senha|");
-		fclose($arq);
+		writeFile("security/security.txt", $email .";". $senha ."|");
+
+		header('location: index.php');
 	}
 ?>
-
 
 <!DOCTYPE html>
 <html>
@@ -41,13 +37,6 @@
 				</fieldset>
 				</form>
 			</div>
-	<?php
-		if(isset($_GET['erro'])){
-			echo "Email ou senha inválidos";
-		}elseif(isset($_GET['erro-sessao'])){
-			echo "Sua sessão acabou! Entre novamente";
-		}
-	?>
 		</section>
 		<aside>
 			<!--Não alterar nada dentro dessa tag! -->

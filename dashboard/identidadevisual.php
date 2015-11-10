@@ -1,4 +1,10 @@
-<?php 
+<?php
+	session_start();
+
+	if(!isset($_SESSION["authenticatedUserName"])){
+		header("location: ../index.php");
+	}
+
 	include '../builders/styleBuilder.php';
 	include '../builders/nameBuilder.php';
 
@@ -104,7 +110,7 @@
 										<input id="input-other-color" type="text" name="input-other-color" />
 									</div>
 								</label>
-								<input id="other-color" type="radio" name="select-color" value="other" onc/>
+								<input id="other-color" type="radio" name="select-color" value="other"/>
 								<label for="other-color">Personalizado</label>
 							</div>
 						</div>

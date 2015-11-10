@@ -1,4 +1,10 @@
 <?php 
+	session_start();
+
+	if(!isset($_SESSION["authenticatedUserName"])){
+		header("location: ../index.php");
+	}
+	
 	include '../builders/navegabilidadeBuilder.php';
 
 	if(isset($_POST["position-sobre"]) && isset($_POST["position-autores"]) && isset($_POST["position-contato"]) && isset($_POST["position-cadastro"])){

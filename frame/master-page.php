@@ -18,34 +18,41 @@
 		  </ul>
 		</nav>
 		<div id="container-form">
-			<form method="POST" action="../dashboard/dashboard.php" target="_parent">
-				<input type="text" name="login" placeholder="E-mail" required/>
+			<form method="POST" action="" target="_parent">
+				<input type="text" name="mail" placeholder="E-mail" required/>
 				<input type="password" name="password" placeholder="Senha" required/>
 				<input type="submit" value="Entrar">
 			</form>
 		</div>
-	</div>
-	<h1>teste</h1>
-	
-	<?php $conteudo_security = file_get_contents("../security/security.txt");
-	echo "Passo 1 ".$conteudo_security."<br><br>";
-	
-	$array_security = explode("|", $conteudo_security);
-	echo "Passo 2 ".$array_security[1]."<br><br>";
-	
-	foreach($array_security as $item){
-		echo "Passo 3 ".$item."<br><br>";
-		
-		$aux = explode(";", $item);
-		echo " Paso 4 | ".$aux[0]." e ".$aux[1];
-		$login = $aux[0];
-		$senha = $aux[1];
-		
-		/*if ((login = $login)&&(senha - $senha)){
-			header('location: ../dashboard/dashboard.php');
-		}*/
-	}
+	</div>	
+
+	<?php 
+		if(isset($_POST["mail"]) && isset($_POST["password"])){
+			session_start();
+			include '../common/common.php';
+
+			$inputMail = $_POST["mail"];
+			$inputPassword = $_POST["password"];
+
+			$conteudo_security = getSecurityContent();
+			echo $conteudo_security ."</br></br>";
+			
+			$array_security = explode("|", $conteudo_security);
+
+			foreach($array_security as $item){
+				
+				$aux = explode(";", $item);
+				
+				$auxMail = $aux[0];
+				$auxPassword = $aux[1];
+				
+				if ($inputMail == $auxMail && $inputPassword == $auxPassword){
+					$_SESSION["authenticatedUserName"] = $inputMail;
+				}
+			}
+
+			header(isset($_SESSION["authenticatedUserName"]) ? "location: ../dashboard/dashboard.php" : "location: ../index.php");
+		}
 	?>
-	
 </body>
 </html>

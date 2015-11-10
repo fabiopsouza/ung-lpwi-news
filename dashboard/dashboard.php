@@ -1,3 +1,10 @@
+<?php
+	session_start();
+
+	if(!isset($_SESSION["authenticatedUserName"])){
+		header("location: ../index.php");
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head lang="pt-BR">

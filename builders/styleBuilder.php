@@ -806,14 +806,18 @@
 					/* panel-identificacao       */
 					/*****************************/
 					#panel-identificacao{
-						padding: 20px 0px 20px 5px;
+						padding: 20px 0px 25px 5px;
 						border-bottom: 1px solid #ffffff;
+					}
+
+					#panel-identificacao img{
+						margin-left: 20%;
 					}
 
 					.welcome{
 						color: #ffffff;
 						display: inline-block;
-						margin: 27px 0px 0px 10px;
+						margin: 5px 0px 0px 10px;
 					}
 
 					/*****************************/

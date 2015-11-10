@@ -10,10 +10,15 @@
 	<div id="container-menu">
 		<div id="panel-identificacao">
 			<div class="row-for-float">
-				<img src="http://placehold.it/90x90" class="img-rounded float-left">
+				<img src="http://placehold.it/120x120" class="img-rounded float-left">
 				<div class="welcome">
 					<p>Welcome,</p>
-					<p>User Name</p>
+					<b>
+						<?php
+							session_start();
+							echo isset($_SESSION["authenticatedUserName"]) ? $_SESSION["authenticatedUserName"] : "Unknow";
+						?>
+					</b>
 				</div>
 			</div>
 		</div>
@@ -26,7 +31,7 @@
 			  	<li><a target="_parent" href="../dashboard/#">Publicar Noticia</a></li>
 			  	<li><a target="_parent" href="../dashboard/#">Editar Sobre</a></li>
 			  	<li><a target="_parent" href="../dashboard/#">Editar Autores</a></li>
-			  	<li><a target="_parent" href="../dashboard/#">Sair</a></li>
+			  	<li><a target="_parent" href="../actions/logout.php">Sair</a></li>
 			</ul>
 		</nav>
 	</div>
