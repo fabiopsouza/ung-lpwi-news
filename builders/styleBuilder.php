@@ -704,6 +704,13 @@
 					}
 
 					/*****************************/
+					/* .linkLoggedIn             */
+					/*****************************/
+					.linkLoggedIn label{
+						color: #ffffff;
+					}
+
+					/*****************************/
 					/* Menu                      */
 					/*****************************/
 					nav{
@@ -784,7 +791,7 @@
 					input[type=submit]:hover{
 						cursor: pointer;
 						border: 1px solid #a1a1a1;
-					}	";
+					}";
 
 		subscribeFile($file, $content);
 	}

@@ -22,8 +22,13 @@
 
 		$headers ="Content-Type: text/html; charset=UTF-8\n";
 		  
-		mail($para, $assunto,$corpo, $headers);
-	}
+		if(mail($para, $assunto,$corpo, $headers)){
+			echo "<script type='text/javascript'>alert('E-mail enviado com sucesso!')</script>";
+		}
+		else{
+			echo "<script type='text/javascript'>alert('Houve um erro ao enviar o e-mail!')</script>";
+		}
+	}	
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -46,11 +51,11 @@
 				<form id="formContato" name="formcontato" method="POST" action="#">
 					<fieldset>
 						<label for="nome">Nome</label>
-						<input type="text" id="nome" name="nome"  autofocus placeholder="Digite seu nome" />
+						<input type="text" id="nome" name="nome" required autofocus placeholder="Digite seu nome" />
 						<label for="email">Email</label>
-						<input type="email" id="email" name="email"  placeholder="Digite seu e-mail" />
+						<input type="email" id="email" name="email" required placeholder="Digite seu e-mail" />
 						<label for="telefone">Telefone</label>
-						<input type="tel" id="telefone" name="telefone" pattern="[0-9]{2} [0-9]{4}[0-9]{4}" placeholder="99 99999999" title="Digite o DDD + 8 numeros" />
+						<input type="tel" id="telefone" name="telefone" required pattern="[0-9]{2} [0-9]{4}[0-9]{4}" placeholder="99 99999999" title="Digite o DDD + 8 numeros" />
 						<label for="estado">Estado</label>
 						<select name="estado" id="estado">
 							<option value="Selecione">Selecione</option>
@@ -82,9 +87,9 @@
 							<option value="Sergipe">Sergipe</option>
 							<option value="Tocantins">Tocantins</option></select>
 						<label for="cidade">Cidade</label>
-						<input type="text" id="cidade" name="cidade"  placeholder="Digite sua cidade" />
+						<input type="text" id="cidade" name="cidade" required placeholder="Digite sua cidade" />
 						<label for="mensagem">Mensagem</label>
-						<textarea rows="4" cols="50" id="mensagem" name="mensagem"  placeholder="Digite sua mensagem"></textarea>
+						<textarea rows="4" cols="50" id="mensagem" name="mensagem" required placeholder="Digite sua mensagem"></textarea>
 						<input type="submit" class="btn-form" name="enviar" value="Enviar"/>
 					</fieldset>
 				</form>

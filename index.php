@@ -1,3 +1,10 @@
+<?php
+	session_start();
+	if(isset($_SESSION["showInvalidLogon"])){
+		echo "<script type='text/javascript'>alert('Usuário ou senha incorretos!')</script>";
+		$_SESSION["showInvalidLogon"] = null;
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head lang="pt-BR">

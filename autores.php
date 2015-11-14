@@ -13,7 +13,7 @@
 	</header>
 	<div id="container-main">
 		<section>
-			<h1>Autores</h1>
+			<h1>Jornalistas</h1>
 			<div class="box-autor-left">
 				<img class="float-left img-rounded" src="http://placehold.it/150x150" alt="autor">
 				<h2>Nome do Autor</h2>

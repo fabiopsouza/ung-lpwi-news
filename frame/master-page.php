@@ -18,17 +18,31 @@
 		  </ul>
 		</nav>
 		<div id="container-form">
-			<form method="POST" action="" target="_parent">
-				<input type="text" name="mail" placeholder="E-mail" required/>
-				<input type="password" name="password" placeholder="Senha" required/>
-				<input type="submit" value="Entrar">
-			</form>
+			<?php
+				session_start();
+
+				if(isset($_SESSION["authenticatedUserName"])){
+					$loggedInContent = "<div class='linkLoggedIn'><label>Welcome</label> <a target='_parent' href='../dashboard/dashboard.php'>". 
+					$_SESSION["authenticatedUserName"] ."</a><label> (</label><a id='logout' target='_parent' href='../actions/logout.php'>Logout</a><label>)</label></div>";
+
+					echo $loggedInContent;
+				}
+				else{
+					$loggedOutContent = "<form method='POST' action='' target='_parent'>
+											<input type='text' name='mail' placeholder='E-mail' required/>
+											<input type='password' name='password' placeholder='Senha' required/>
+											<input type='submit' value='Entrar'>
+										</form>";
+
+					echo($loggedOutContent);
+				}
+			?>
 		</div>
 	</div>	
 
 	<?php 
 		if(isset($_POST["mail"]) && isset($_POST["password"])){
-			session_start();
+			
 			include '../common/common.php';
 
 			$inputMail = $_POST["mail"];
@@ -51,7 +65,15 @@
 				}
 			}
 
-			header(isset($_SESSION["authenticatedUserName"]) ? "location: ../dashboard/dashboard.php" : "location: ../index.php");
+			if(isset($_SESSION["authenticatedUserName"])){
+				header("location: ../dashboard/dashboard.php");
+			}
+			else{
+				$_SESSION["showInvalidLogon"] = true;
+				header("location: ../index.php");
+				
+			}
+			
 		}
 	?>
 </body>
