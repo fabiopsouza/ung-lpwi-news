@@ -13,68 +13,73 @@
 		$positionContato = $_POST["position-contato"];
 		$positionCadastro = $_POST["position-cadastro"];
 
-		$contentSobre = "<li><a target=\"_parent\" href=\"../sobre.php\">Sobre</a></li>";
-		$contentAutores = "<li><a target=\"_parent\" href=\"../autores.php\">Autores</a></li>";
-		$contentContato = "<li><a target=\"_parent\" href=\"../contate-nos.php\">Contato</a></li>";
-		$contentCadastro = "<li><a target=\"_parent\" href=\"../cadastro.php\">Cadastro</a></li>";
+		$arrayPositions = array(0 => $positionSobre, 1 => $positionAutores, 2 => $positionContato, 3 => $positionCadastro);
 
-		//Position Sobre
-		if($positionSobre == 1){
-			$menu1 = $contentSobre;
-		}
-		else if($positionSobre == 2){
-			$menu2 = $contentSobre;
-		}
-		else if($positionSobre == 3){
-			$menu3 = $contentSobre;
-		}
-		else if($positionSobre == 4){
-			$menu4 = $contentSobre;
-		}
+		if(assertNotEqualsValuesInArray($arrayPositions)){
 
-		//Position Autores
-		if($positionAutores == 1){
-			$menu1 = $contentAutores;
-		}
-		else if($positionAutores == 2){
-			$menu2 = $contentAutores;
-		}
-		else if($positionAutores == 3){
-			$menu3 = $contentAutores;
-		}
-		else if($positionAutores == 4){
-			$menu4 = $contentAutores;
-		}
+			$contentSobre = "<li><a target=\"_parent\" href=\"../sobre.php\">Sobre</a></li>";
+			$contentAutores = "<li><a target=\"_parent\" href=\"../autores.php\">Autores</a></li>";
+			$contentContato = "<li><a target=\"_parent\" href=\"../contate-nos.php\">Contato</a></li>";
+			$contentCadastro = "<li><a target=\"_parent\" href=\"../cadastro.php\">Cadastro</a></li>";
 
-		//Position Contato
-		if($positionContato == 1){
-			$menu1 = $contentContato;
-		}
-		else if($positionContato == 2){
-			$menu2 = $contentContato;
-		}
-		else if($positionContato == 3){
-			$menu3 = $contentContato;
-		}
-		else if($positionContato == 4){
-			$menu4 = $contentContato;
-		}
+			//Position Sobre
+			if($positionSobre == 1){
+				$menu1 = $contentSobre;
+			}
+			else if($positionSobre == 2){
+				$menu2 = $contentSobre;
+			}
+			else if($positionSobre == 3){
+				$menu3 = $contentSobre;
+			}
+			else if($positionSobre == 4){
+				$menu4 = $contentSobre;
+			}
 
-		//Position Cadastro
-		if($positionCadastro == 1){
-			$menu1 = $contentCadastro;
-		}
-		else if($positionCadastro == 2){
-			$menu2 = $contentCadastro;
-		}
-		else if($positionCadastro == 3){
-			$menu3 = $contentCadastro;
-		}
-		else if($positionCadastro == 4){
-			$menu4 = $contentCadastro;
-		}
+			//Position Autores
+			if($positionAutores == 1){
+				$menu1 = $contentAutores;
+			}
+			else if($positionAutores == 2){
+				$menu2 = $contentAutores;
+			}
+			else if($positionAutores == 3){
+				$menu3 = $contentAutores;
+			}
+			else if($positionAutores == 4){
+				$menu4 = $contentAutores;
+			}
 
-		navegabilidadeBuild($menu1, $menu2, $menu3, $menu4);
+			//Position Contato
+			if($positionContato == 1){
+				$menu1 = $contentContato;
+			}
+			else if($positionContato == 2){
+				$menu2 = $contentContato;
+			}
+			else if($positionContato == 3){
+				$menu3 = $contentContato;
+			}
+			else if($positionContato == 4){
+				$menu4 = $contentContato;
+			}
+
+			//Position Cadastro
+			if($positionCadastro == 1){
+				$menu1 = $contentCadastro;
+			}
+			else if($positionCadastro == 2){
+				$menu2 = $contentCadastro;
+			}
+			else if($positionCadastro == 3){
+				$menu3 = $contentCadastro;
+			}
+			else if($positionCadastro == 4){
+				$menu4 = $contentCadastro;
+			}
+
+			navegabilidadeBuild($menu1, $menu2, $menu3, $menu4);
+		}
 	}
 ?>
 

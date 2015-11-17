@@ -25,12 +25,12 @@
 		<nav>
 		  	<ul>
 		  		<li><a target="_parent" href="../dashboard/dashboard.php">Dashboard</a></li>
-		  		<li><a target="_parent" href="../dashboard/#">Meu Cadastro</a></li>
+		  		<li><a target="_parent" href="../dashboard/meucadastro.php">Meu Cadastro</a></li>
 				<li><a target="_parent" href="../dashboard/identidadevisual.php">Identidade Visual</a></li>
 			  	<li><a target="_parent" href="../dashboard/navegabilidade.php" >Navegabilidade</a></li>
-			  	<li><a target="_parent" href="../dashboard/#">Publicar Noticia</a></li>
-			  	<li><a target="_parent" href="../dashboard/#">Editar Sobre</a></li>
-			  	<li><a target="_parent" href="../dashboard/#">Editar Autores</a></li>
+			  	<li><a target="_parent" href="../dashboard/publicarnoticia.php">Publicar Noticia</a></li>
+			  	<li><a target="_parent" href="../dashboard/editarsobre.php">Editar Sobre</a></li>
+			  	<li><a target="_parent" href="../dashboard/editarautores.php">Editar Autores</a></li>
 			  	<li><a target="_parent" href="../actions/logout.php">Sair</a></li>
 			</ul>
 		</nav>

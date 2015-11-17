@@ -11,6 +11,7 @@
 		fclose($file);
 	}
 
+	//return string
 	function getSecurityContent(){
 		$file = "../security/security.txt";
 		$content = file_get_contents($file);
@@ -19,5 +20,24 @@
 		$content = rtrim($content, "|");
 
 		return $content;
+	}
+
+	//return boolean
+	function assertNotEqualsValuesInArray($array){
+		foreach ($array as $itemDad) { 
+			$count = 0;
+
+			foreach ($array as $itemSon) {
+				if($itemSon == $itemDad){
+					$count++;
+				}
+			}
+
+			if($count > 1){
+				return false;
+			}
+		}
+
+		return true;
 	}
 ?>
